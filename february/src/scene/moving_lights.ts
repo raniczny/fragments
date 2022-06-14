@@ -1,6 +1,6 @@
-import {Clock, DoubleSide, Mesh, MeshBasicMaterial, Object3D, PlaneBufferGeometry} from "three";
+import {Clock, DoubleSide, Mesh, MeshBasicMaterial, Object3D, PlaneBufferGeometry} from "three"
 
-let movingLights: Object3D = makeMovingLights()
+const movingLights: Object3D = makeMovingLights()
 
 function makeMovingLights(): Object3D {
     const geometry = new PlaneBufferGeometry(130, 5)

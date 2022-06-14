@@ -1,11 +1,11 @@
-import {MathUtils, Vector2} from "three";
+import {Vector2} from "three"
 
 // ------- Coordinates gen
 function getCoordinatesWithinCircle(radius: number): Vector2 {
-    const theta = 2 * Math.PI * Math.random();
-    const r = radius * Math.pow(Math.random(), 0.5);
-    const x = r * Math.cos(theta);
-    const y = r * Math.sin(theta);
+    const theta = 2 * Math.PI * Math.random()
+    const r = radius * Math.pow(Math.random(), 0.5)
+    const x = r * Math.cos(theta)
+    const y = r * Math.sin(theta)
     return new Vector2(x, y)
 }
 

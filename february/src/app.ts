@@ -80,10 +80,10 @@ addCenter(scene)
 
 // region Sound
 async function createReverb(): Promise<ConvolverNode> {
-    let convolver = audioListener.context.createConvolver()
+    const convolver = audioListener.context.createConvolver()
 
-    let response = await fetch("./res/sound/proc/proc_rev_01.wav")
-    let arraybuffer = await response.arrayBuffer()
+    const response = await fetch("./res/sound/proc/proc_rev_01.wav")
+    const arraybuffer = await response.arrayBuffer()
     convolver.buffer = await audioListener.context.decodeAudioData(arraybuffer)
 
     return convolver

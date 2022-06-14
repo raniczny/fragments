@@ -1,4 +1,4 @@
-import {sRGBEncoding, WebGLRenderer} from "three";
+import {sRGBEncoding, WebGLRenderer} from "three"
 
 let renderer: WebGLRenderer
 
@@ -6,7 +6,7 @@ function createRenderer(): WebGLRenderer {
     renderer = new WebGLRenderer()
     renderer.setPixelRatio(0.5)
     renderer.setSize(window.innerWidth, window.innerHeight)
-    renderer.outputEncoding = sRGBEncoding;
+    renderer.outputEncoding = sRGBEncoding
 
     attachRenderer()
 

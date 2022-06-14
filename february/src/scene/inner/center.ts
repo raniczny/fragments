@@ -1,4 +1,4 @@
-import {Reflector} from "three/examples/jsm/objects/Reflector";
+import {Reflector} from "three/examples/jsm/objects/Reflector"
 import {
     CircleBufferGeometry,
     Color,
@@ -7,7 +7,7 @@ import {
     MathUtils,
     Mesh,
     MeshBasicMaterial, Scene
-} from "three";
+} from "three"
 
 function addCenter(scene: Scene) {
     const reflection: Reflector = new Reflector(

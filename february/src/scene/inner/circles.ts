@@ -1,4 +1,4 @@
-import {MathUtils, Mesh, MeshBasicMaterial, Object3D, PlaneBufferGeometry, TextureLoader} from "three";
+import {MathUtils, Mesh, MeshBasicMaterial, Object3D, PlaneBufferGeometry, TextureLoader} from "three"
 
 function circles(textureLoader: TextureLoader): Object3D {
     const texture = textureLoader.load('./res/img/circles_iii.png')

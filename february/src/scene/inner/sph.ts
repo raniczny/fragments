@@ -9,12 +9,12 @@ import {
     Scene,
     SphereBufferGeometry,
     Vector3
-} from "three";
-import {restoreCameraElevation} from "../../camera";
-import {getCoordinatesWithinOuterCircle} from "../../utils/coordutils";
+} from "three"
+import {restoreCameraElevation} from "../../camera"
+import {getCoordinatesWithinOuterCircle} from "../../utils/coordutils"
 
 let sph: Object3D
-let sphGroup: Group = new Group()
+const sphGroup: Group = new Group()
 let whole = false
 
 function createSph(scene: Scene) {

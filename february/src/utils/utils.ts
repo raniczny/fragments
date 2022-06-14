@@ -1,4 +1,4 @@
-import {Color, CylinderBufferGeometry, MathUtils, Mesh, MeshBasicMaterial, Object3D} from "three";
+import {Color, CylinderBufferGeometry, MathUtils, Mesh, MeshBasicMaterial, Object3D} from "three"
 
 function remap(inputMin: number, inputMax: number, outputMin: number, outputMax: number, val: number): number {
     const t = MathUtils.inverseLerp(inputMin, inputMax, val)

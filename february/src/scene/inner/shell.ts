@@ -1,4 +1,4 @@
-import {Color, CylinderBufferGeometry, DoubleSide, Mesh, MeshBasicMaterial, Object3D} from "three";
+import {Color, CylinderBufferGeometry, DoubleSide, Mesh, MeshBasicMaterial, Object3D} from "three"
 
 function shell(): Object3D {
     const geometry = new CylinderBufferGeometry(70, 70, 20, 128, 1, true)

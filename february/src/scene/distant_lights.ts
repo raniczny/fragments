@@ -1,4 +1,4 @@
-import {BufferGeometry, Float32BufferAttribute, MathUtils, Object3D, Points, PointsMaterial} from "three";
+import {BufferGeometry, Float32BufferAttribute, MathUtils, Object3D, Points, PointsMaterial} from "three"
 
 const distantLightDegreeOffset = 100
 let distantLightDegree = 0

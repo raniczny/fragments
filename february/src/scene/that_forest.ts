@@ -1,4 +1,4 @@
-import {MathUtils, Scene, Sprite, SpriteMaterial, TextureLoader} from "three";
+import {MathUtils, Scene, Sprite, SpriteMaterial, TextureLoader} from "three"
 
 const texture = './res/img/i_am_a_forest.png'
 

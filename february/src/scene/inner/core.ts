@@ -6,16 +6,16 @@ import {
     Points,
     PointsMaterial, Scene, SphereBufferGeometry,
     Vector3
-} from "three";
-import {startGlowing, stopGlowing} from "../../composer";
+} from "three"
+import {startGlowing, stopGlowing} from "../../composer"
 
 let vertices: Vector3[] = []
-let geometry = new BufferGeometry()
+const geometry = new BufferGeometry()
 
-let aura = makeAura()
+const aura = makeAura()
 aura.position.setY(11)
 
-let core = makeCore()
+const core = makeCore()
 
 function makeAura(): Points {
     particles()

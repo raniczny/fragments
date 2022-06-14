@@ -1,10 +1,10 @@
-import {EffectComposer} from "three/examples/jsm/postprocessing/EffectComposer";
-import {RenderPass} from "three/examples/jsm/postprocessing/RenderPass";
-import {ShaderPass} from "three/examples/jsm/postprocessing/ShaderPass";
-import {filmGrain} from "./shaders/film_grain_shader";
-import {SMAAPass} from "three/examples/jsm/postprocessing/SMAAPass";
-import {Camera, Scene, Vector2, WebGLRenderer} from "three";
-import {UnrealBloomPass} from "three/examples/jsm/postprocessing/UnrealBloomPass";
+import {EffectComposer} from "three/examples/jsm/postprocessing/EffectComposer"
+import {RenderPass} from "three/examples/jsm/postprocessing/RenderPass"
+import {ShaderPass} from "three/examples/jsm/postprocessing/ShaderPass"
+import {filmGrain} from "./shaders/film_grain_shader"
+import {SMAAPass} from "three/examples/jsm/postprocessing/SMAAPass"
+import {Camera, Scene, Vector2, WebGLRenderer} from "three"
+import {UnrealBloomPass} from "three/examples/jsm/postprocessing/UnrealBloomPass"
 
 let composer: EffectComposer
 let renderPass: RenderPass

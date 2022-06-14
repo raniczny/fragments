@@ -7,8 +7,8 @@ import {
     MeshBasicMaterial,
     MeshPhongMaterial,
     Object3D, Scene
-} from "three";
-import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader";
+} from "three"
+import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader"
 
 function makePlane(): Object3D {
     const geometry = new CircleBufferGeometry(1000, 30)

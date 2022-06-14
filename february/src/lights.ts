@@ -1,4 +1,4 @@
-import {DirectionalLight, Scene} from "three";
+import {DirectionalLight, Scene} from "three"
 
 function addLights(scene: Scene)  {
     const dirLight = new DirectionalLight()

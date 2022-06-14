@@ -1,4 +1,4 @@
-import {DoubleSide, MathUtils, Mesh, MeshBasicMaterial, Object3D, PlaneBufferGeometry, TextureLoader} from "three";
+import {DoubleSide, MathUtils, Mesh, MeshBasicMaterial, Object3D, PlaneBufferGeometry, TextureLoader} from "three"
 
 function makeThatStroke(textureLoader: TextureLoader): Object3D {
     const geometry = new PlaneBufferGeometry(64, 42)

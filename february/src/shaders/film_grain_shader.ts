@@ -1,4 +1,4 @@
-import {ShaderPass} from "three/examples/jsm/postprocessing/ShaderPass";
+import {ShaderPass} from "three/examples/jsm/postprocessing/ShaderPass"
 
 // https://simonharris.co/making-a-noise-film-grain-post-processing-effect-from-scratch-in-threejs/
 // With slight modifications for vertical marks and flickering
