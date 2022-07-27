@@ -1,0 +1,1 @@
+https://raniczny.net/fragments/
