@@ -1,6 +1,7 @@
 const { merge } = require('webpack-merge')
 const common = require('./webpack.common.js')
 const path = require('path');
+const scene = process.env.npm_config_scene
 
 module.exports = merge(common, {
     mode: 'development',
@@ -8,7 +9,7 @@ module.exports = merge(common, {
     devServer: {
         https: false,
         static: {
-            directory: path.join(__dirname, '../dist'),
+            directory: path.join(__dirname, `scenes/${scene}/dist`),
         },
         hot: true,
     },
