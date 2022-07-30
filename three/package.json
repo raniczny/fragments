@@ -5,6 +5,8 @@
     "dev": "webpack serve --config webpack.dev.js"
   },
   "devDependencies": {
+    "@types/three": "^0.140.0",
+    "three": "^0.140.2",
     "copy-webpack-plugin": "^11.0.0",
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.72.1",
