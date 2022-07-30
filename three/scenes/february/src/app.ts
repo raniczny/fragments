@@ -8,9 +8,9 @@ import {
 import {addLights} from "./lights"
 import {createRenderer} from "./renderer"
 import {createCamera} from "./camera"
-import {Controls} from "./controls"
-import {inside, outside, pos} from "./utils/coordutils"
-import {animateFilmGrain} from "./shaders/film_grain_shader"
+import {Controls} from "../../../shared/controls"
+import {inside, outside, pos} from "../../../shared/utils/coordutils"
+import {animateFilmGrain} from "../../../shared/shaders/film_grain_shader"
 import {createComposer, filmGrainPass} from "./composer"
 import {makeThisStroke} from "./scene/this_stroke"
 import {makeThatStroke} from "./scene/that_stroke"
@@ -25,7 +25,7 @@ import {shell} from "./scene/inner/shell"
 import {addGround, makePlane} from "./scene/ground"
 import {createThatForest} from "./scene/that_forest"
 import {createThisForest} from "./scene/this_forest"
-import {remap} from "./utils/utils"
+import {remap} from "../../../shared/utils/utils"
 
 // region Init
 const framerate = 24

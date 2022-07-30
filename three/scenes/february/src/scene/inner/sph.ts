@@ -11,7 +11,7 @@ import {
     Vector3
 } from "three"
 import {restoreCameraElevation} from "../../camera"
-import {getCoordinatesWithinOuterCircle} from "../../utils/coordutils"
+import {getCoordinatesWithinOuterCircle} from "../../../../../shared/utils/coordutils"
 
 let sph: Object3D
 const sphGroup: Group = new Group()

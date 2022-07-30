@@ -1,6 +1,6 @@
 import {BufferGeometry, Color, MathUtils, Matrix4, Mesh, MeshBasicMaterial, Scene} from "three"
 import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader"
-import {getCoordinatesWithinOuterCircle} from "../utils/coordutils"
+import {getCoordinatesWithinOuterCircle} from "../../../../shared/utils/coordutils"
 import {mergeBufferGeometries} from "three/examples/jsm/utils/BufferGeometryUtils"
 
 function createThisForest(scene: Scene) {
