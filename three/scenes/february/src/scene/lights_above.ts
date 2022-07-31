@@ -1,6 +1,6 @@
 import {BufferGeometry, Float32BufferAttribute, MathUtils, Object3D, Points, PointsMaterial} from "three"
 
-function makeLightsAbove(): Object3D {
+export function makeLightsAbove(): Object3D {
     const vertices = []
 
     for (let i = 0; i < 28; i++) {
@@ -17,5 +17,3 @@ function makeLightsAbove(): Object3D {
     material.size = window.devicePixelRatio
     return new Points(geometry, material)
 }
-
-export {makeLightsAbove}

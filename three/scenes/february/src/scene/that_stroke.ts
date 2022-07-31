@@ -1,6 +1,6 @@
 import {DoubleSide, MathUtils, Mesh, MeshBasicMaterial, Object3D, PlaneBufferGeometry, TextureLoader} from "three"
 
-function makeThatStroke(textureLoader: TextureLoader): Object3D {
+export function makeThatStroke(textureLoader: TextureLoader): Object3D {
     const geometry = new PlaneBufferGeometry(64, 42)
     const texture = textureLoader.load('./res/img/that_stroke.png')
     const material = new MeshBasicMaterial({map: texture})
@@ -19,5 +19,3 @@ function makeThatStroke(textureLoader: TextureLoader): Object3D {
 
     return thatStroke
 }
-
-export {makeThatStroke}

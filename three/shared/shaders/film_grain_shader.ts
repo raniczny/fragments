@@ -43,7 +43,8 @@ function fragmentShader() {
 const vertShader = vertexShader()
 const fragShader = fragmentShader()
 let counter = 0.0
-const filmGrain = {
+
+export const filmGrain = {
     uniforms: {
         "tDiffuse": {value: null},
         "amount": {value: counter}
@@ -52,9 +53,7 @@ const filmGrain = {
     fragmentShader: fragShader
 }
 
-function animateFilmGrain(filmGrainPass: ShaderPass, counterIncrement: number) {
+export function animateFilmGrain(filmGrainPass: ShaderPass, counterIncrement: number) {
     counter += counterIncrement
     filmGrainPass.uniforms["amount"].value = counter
 }
-
-export {filmGrain, animateFilmGrain}

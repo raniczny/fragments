@@ -2,7 +2,7 @@ import {MathUtils, Scene, Sprite, SpriteMaterial, TextureLoader} from "three"
 
 const texture = './res/img/i_am_a_forest.png'
 
-function createThatForest(scene: Scene, textureLoader: TextureLoader) {
+export function createThatForest(scene: Scene, textureLoader: TextureLoader) {
     const map = textureLoader.load(texture)
     const material = new SpriteMaterial({map: map, color: 0x555555})
     material.rotation = -0.11
@@ -33,5 +33,3 @@ function createThatForest(scene: Scene, textureLoader: TextureLoader) {
         scene.add(sprite)
     }
 }
-
-export {createThatForest}

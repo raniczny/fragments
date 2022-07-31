@@ -4,7 +4,7 @@ const distantLightDegreeOffset = 100
 let distantLightDegree = 0
 const distantLightMaxDegree = 99
 
-function makeDistantLights(): Object3D {
+export function makeDistantLights(): Object3D {
     const vertices = []
 
     for (let i = 0; i < 77; i++) {
@@ -24,5 +24,3 @@ function makeDistantLights(): Object3D {
     material.size = window.devicePixelRatio
     return new Points(geometry, material)
 }
-
-export {makeDistantLights}

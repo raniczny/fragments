@@ -61,17 +61,6 @@ function arcs() {
     }
 }
 
-function animateCore() {
-    aura.geometry.dispose()
-    vertices = []
-    particles()
-    arcs()
-    aura.geometry.setFromPoints(vertices)
-    aura.rotateX(MathUtils.degToRad(9.133))
-    aura.rotateZ(MathUtils.degToRad(11.333))
-    aura.rotateY(MathUtils.degToRad(53.21))
-}
-
 function makeCore(): Object3D {
     const geometry = new SphereBufferGeometry()
     const material = new MeshBasicMaterial()
@@ -83,16 +72,25 @@ function makeCore(): Object3D {
     return core
 }
 
-function revealCore(scene: Scene) {
+export function animateCore() {
+    aura.geometry.dispose()
+    vertices = []
+    particles()
+    arcs()
+    aura.geometry.setFromPoints(vertices)
+    aura.rotateX(MathUtils.degToRad(9.133))
+    aura.rotateZ(MathUtils.degToRad(11.333))
+    aura.rotateY(MathUtils.degToRad(53.21))
+}
+
+export function revealCore(scene: Scene) {
     scene.add(core)
     scene.add(aura)
     startGlowing()
 }
 
-function concealCore(scene: Scene) {
+export function concealCore(scene: Scene) {
     scene.remove(core)
     scene.remove(aura)
     stopGlowing()
 }
-
-export {animateCore, revealCore, concealCore}

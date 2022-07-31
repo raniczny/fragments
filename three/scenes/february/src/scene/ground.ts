@@ -10,7 +10,7 @@ import {
 } from "three"
 import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader"
 
-function makePlane(): Object3D {
+export function makePlane(): Object3D {
     const geometry = new CircleBufferGeometry(1000, 30)
     const material = new MeshBasicMaterial()
     material.color = new Color(0x010101)
@@ -20,8 +20,7 @@ function makePlane(): Object3D {
     return mesh
 }
 
-
-function addGround(scene: Scene) {
+export function addGround(scene: Scene) {
     const gltfLoader = new GLTFLoader()
     gltfLoader.load('./res/obj/round_ground_ii.glb', (gltf) => {
         gltf.scene.traverse(function (sceneElement) {
@@ -40,5 +39,3 @@ function addGround(scene: Scene) {
         scene.add(root)
     })
 }
-
-export {makePlane, addGround}

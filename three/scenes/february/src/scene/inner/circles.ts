@@ -1,6 +1,6 @@
 import {MathUtils, Mesh, MeshBasicMaterial, Object3D, PlaneBufferGeometry, TextureLoader} from "three"
 
-function circles(textureLoader: TextureLoader): Object3D {
+export function circles(textureLoader: TextureLoader): Object3D {
     const texture = textureLoader.load('./res/img/circles_iii.png')
     const material = new MeshBasicMaterial({map: texture})
     material.transparent = true
@@ -13,5 +13,3 @@ function circles(textureLoader: TextureLoader): Object3D {
 
     return mesh
 }
-
-export {circles}

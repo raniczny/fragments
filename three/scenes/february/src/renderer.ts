@@ -2,19 +2,17 @@ import {sRGBEncoding, WebGLRenderer} from "three"
 
 let renderer: WebGLRenderer
 
-function createRenderer(): WebGLRenderer {
+export function createRenderer(): WebGLRenderer {
     renderer = new WebGLRenderer()
     renderer.setPixelRatio(0.5)
     renderer.setSize(window.innerWidth, window.innerHeight)
     renderer.outputEncoding = sRGBEncoding
 
-    attachRenderer()
+    attachCanvas()
 
     return renderer
 }
 
-function attachRenderer() {
+function attachCanvas() {
     document.body.appendChild(renderer.domElement)
 }
-
-export {createRenderer}

@@ -3,7 +3,7 @@ import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader"
 import {getCoordinatesWithinOuterCircle} from "../../../../shared/utils/coordutils"
 import {mergeBufferGeometries} from "three/examples/jsm/utils/BufferGeometryUtils"
 
-function createThisForest(scene: Scene) {
+export function createThisForest(scene: Scene) {
     const model = ["./res/obj/i_am_a_forest.glb"]
     const treeGeometries: BufferGeometry[] = []
     const gltfLoader = new GLTFLoader()
@@ -51,5 +51,3 @@ function makeMergedTreesMesh(treeGeometries: BufferGeometry[]): Mesh {
     treeMesh.material = material
     return treeMesh
 }
-
-export {createThisForest}

@@ -1,6 +1,6 @@
 import {Clock, DoubleSide, Mesh, MeshBasicMaterial, Object3D, PlaneBufferGeometry} from "three"
 
-const movingLights: Object3D = makeMovingLights()
+export const movingLights: Object3D = makeMovingLights()
 
 function makeMovingLights(): Object3D {
     const geometry = new PlaneBufferGeometry(130, 5)
@@ -16,7 +16,8 @@ function makeMovingLights(): Object3D {
 
 let newPosition = 0
 let move = false
-function moveLights(clock: Clock, delta: number) {
+
+export function moveLights(clock: Clock, delta: number) {
     if (move) {
         newPosition = (movingLights.position.x - delta * 500)
         movingLights.position.setX(newPosition)
@@ -30,5 +31,3 @@ function moveLights(clock: Clock, delta: number) {
         move = true
     }
 }
-
-export {movingLights, moveLights}

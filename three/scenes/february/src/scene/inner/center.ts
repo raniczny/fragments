@@ -9,7 +9,7 @@ import {
     MeshBasicMaterial, Scene
 } from "three"
 
-function addCenter(scene: Scene) {
+export function addCenter(scene: Scene) {
     const reflection: Reflector = new Reflector(
         new CircleBufferGeometry(21.8, 128),
         {
@@ -30,5 +30,3 @@ function addCenter(scene: Scene) {
     mesh.position.setY(-0.3)
     scene.add(mesh)
 }
-
-export {addCenter}

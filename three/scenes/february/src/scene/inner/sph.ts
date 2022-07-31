@@ -14,10 +14,10 @@ import {restoreCameraElevation} from "../../camera"
 import {getCoordinatesWithinOuterCircle} from "../../../../../shared/utils/coordutils"
 
 let sph: Object3D
-const sphGroup: Group = new Group()
-let whole = false
+export const sphGroup: Group = new Group()
+export let whole = false
 
-function createSph(scene: Scene) {
+export function createSph(scene: Scene) {
     const geometry = new SphereBufferGeometry()
     const material = new MeshPhongMaterial()
     material.color = new Color(0x171717)
@@ -29,7 +29,7 @@ function createSph(scene: Scene) {
     scene.add(sphGroup)
 }
 
-function wholeness(camera: Camera) {
+export function wholeness(camera: Camera) {
     sphGroup.add(camera)
     camera.position.copy(sph.position)
     sphGroup.remove(sph)
@@ -41,7 +41,7 @@ function wholeness(camera: Camera) {
     whole = true
 }
 
-function separation(camera: Camera, lookAway: boolean) {
+export function separation(camera: Camera, lookAway: boolean) {
     sphGroup.remove(camera)
     sphGroup.add(sph)
 
@@ -59,5 +59,3 @@ function separation(camera: Camera, lookAway: boolean) {
 
     whole = false
 }
-
-export {createSph, sphGroup, wholeness, separation, whole}

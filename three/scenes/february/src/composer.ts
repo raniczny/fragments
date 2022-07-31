@@ -9,10 +9,11 @@ import {UnrealBloomPass} from "three/examples/jsm/postprocessing/UnrealBloomPass
 let composer: EffectComposer
 let renderPass: RenderPass
 let bloomPass: UnrealBloomPass
-let filmGrainPass: ShaderPass
 let smaaPass: SMAAPass
 
-function createComposer(scene: Scene, camera: Camera, renderer: WebGLRenderer) {
+export let filmGrainPass: ShaderPass
+
+export function createComposer(scene: Scene, camera: Camera, renderer: WebGLRenderer) {
     composer = new EffectComposer(renderer)
     configPasses(scene, camera)
 
@@ -42,19 +43,17 @@ function configPasses(scene: Scene, camera: Camera) {
 
 let glowing = false
 
-function startGlowing() {
+export function startGlowing() {
     if (!glowing) {
         composer.insertPass(bloomPass, 1)
         glowing = true
     }
 }
 
-function stopGlowing() {
+export function stopGlowing() {
     if (glowing) {
 
         composer.removePass(bloomPass)
         glowing = false
     }
 }
-
-export {createComposer, filmGrainPass, stopGlowing, startGlowing}

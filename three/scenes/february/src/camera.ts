@@ -4,7 +4,7 @@ const HEIGHT = 1.94
 
 let camera: Camera
 
-function createCamera(): Camera {
+export function createCamera(): Camera {
     camera = new PerspectiveCamera(
         48.6,
         window.innerWidth / window.innerHeight,
@@ -28,8 +28,6 @@ function configCamera() {
     camera.position.setZ(camPositionZ)
 }
 
-function restoreCameraElevation() {
+export function restoreCameraElevation() {
     camera.position.y = HEIGHT
 }
-
-export {createCamera, restoreCameraElevation}
