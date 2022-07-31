@@ -7,7 +7,7 @@ export class FragmentAudioLoader extends AudioLoader {
         super()
     }
 
-    public static getInstance() {
+    static getInstance() {
         if (this.INSTANCE == null) {
             this.INSTANCE = new FragmentAudioLoader()
         }
