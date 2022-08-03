@@ -1,8 +1,9 @@
 import {EffectComposer} from "three/examples/jsm/postprocessing/EffectComposer"
 import {Camera, Scene, WebGLRenderer} from "three"
 import {RenderPass} from "three/examples/jsm/postprocessing/RenderPass"
+import {OnWindowResizeHandler} from "./WindowResizeHandler";
 
-export class FragmentComposer extends EffectComposer {
+export class FragmentComposer extends EffectComposer implements OnWindowResizeHandler {
     constructor(scene: Scene, camera: Camera, renderer: WebGLRenderer) {
         super(renderer)
 

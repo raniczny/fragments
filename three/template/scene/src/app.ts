@@ -5,6 +5,7 @@ import {FragmentRenderer} from "./components/FragmentRenderer"
 import {FragmentComposer} from "./components/FragmentComposer"
 import {FragmentControls} from "./components/FragmentControls"
 import {marker} from "../../../shared/utils/marker"
+import {WindowResizeHandler} from "./components/WindowResizeHandler";
 
 // region Init
 // const framerate = 24
@@ -17,6 +18,8 @@ const camera = new FragmentCamera(audioListener)
 const renderer = new FragmentRenderer()
 const composer = new FragmentComposer(scene, camera, renderer)
 const controls = new FragmentControls(camera, renderer.domElement, audioListener, onMovementListener)
+
+WindowResizeHandler.init([camera, renderer, composer])
 
 // endregion Init
 
@@ -34,14 +37,6 @@ function onMovementListener() {
 // endregion Movement
 
 // region Rendering
-window.addEventListener('resize', onWindowResize, false)
-
-function onWindowResize() {
-    camera.handleWindowResize()
-    composer.handleWindowResize()
-    renderer.handleWindowResize()
-}
-
 function animate() {
     requestAnimationFrame(animate)
     // ...

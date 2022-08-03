@@ -1,9 +1,10 @@
 import {AudioListener, PerspectiveCamera} from "three"
+import {OnWindowResizeHandler} from "./WindowResizeHandler";
 
 const height = 2
 const rotationOrder = 'YXZ'
 
-export class FragmentCamera extends PerspectiveCamera {
+export class FragmentCamera extends PerspectiveCamera implements OnWindowResizeHandler {
     constructor(audioListener: AudioListener) {
         super()
 
