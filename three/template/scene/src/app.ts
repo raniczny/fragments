@@ -4,7 +4,7 @@ import {FragmentCamera} from "./components/FragmentCamera"
 import {FragmentRenderer} from "./components/FragmentRenderer"
 import {FragmentComposer} from "./components/FragmentComposer"
 import {FragmentControls} from "./components/FragmentControls"
-import {marker} from "../../../shared/utils/marker"
+import {Marker} from "../../../shared/utils/marker"
 import {WindowResizeHandler} from "./components/WindowResizeHandler";
 
 // region Init
@@ -24,10 +24,10 @@ WindowResizeHandler.init([camera, renderer, composer])
 // endregion Init
 
 // region Objects
-scene.add(marker(5, 5))
-scene.add(marker(-5, -5))
-scene.add(marker(-5, 5))
-scene.add(marker(5, -5))
+scene.add(new Marker(5, 5))
+scene.add(new Marker(-5, -5))
+scene.add(new Marker(-5, 5))
+scene.add(new Marker(5, -5))
 // endregion Objects
 
 // region Movement
