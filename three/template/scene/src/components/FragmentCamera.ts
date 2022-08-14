@@ -1,5 +1,5 @@
 import {AudioListener, PerspectiveCamera} from "three"
-import {OnWindowResizeHandler} from "./WindowResizeHandler";
+import {OnWindowResizeHandler} from "./WindowResizeHandler"
 
 const height = 2
 const rotationOrder = 'YXZ'

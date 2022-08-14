@@ -5,7 +5,7 @@ import {FragmentRenderer} from "./components/FragmentRenderer"
 import {FragmentComposer} from "./components/FragmentComposer"
 import {FragmentControls} from "./components/FragmentControls"
 import {Marker} from "../../../shared/utils/marker"
-import {WindowResizeHandler} from "./components/WindowResizeHandler";
+import {WindowResizeHandler} from "./components/WindowResizeHandler"
 
 // region Init
 // const framerate = 24

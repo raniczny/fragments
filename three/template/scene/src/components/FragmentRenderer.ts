@@ -1,5 +1,5 @@
 import {sRGBEncoding, WebGLRenderer} from "three"
-import {OnWindowResizeHandler} from "./WindowResizeHandler";
+import {OnWindowResizeHandler} from "./WindowResizeHandler"
 
 export class FragmentRenderer extends WebGLRenderer implements OnWindowResizeHandler {
     constructor() {
