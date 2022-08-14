@@ -4,7 +4,7 @@ import {FragmentCamera} from "./components/FragmentCamera"
 import {FragmentRenderer} from "./components/FragmentRenderer"
 import {FragmentComposer} from "./components/FragmentComposer"
 import {FragmentControls} from "./components/FragmentControls"
-import {Marker} from "../../../shared/utils/marker"
+import {Marker} from "../../../shared/utils/Marker"
 import {WindowResizeHandler} from "./components/WindowResizeHandler"
 
 // region Init
