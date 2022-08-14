@@ -13,7 +13,6 @@ export function makeLightsAbove(): Object3D {
 
     const geometry = new BufferGeometry()
     geometry.setAttribute('position', new Float32BufferAttribute(vertices, 3))
-    const material = new PointsMaterial({color: 0xffffff, sizeAttenuation: false})
-    material.size = window.devicePixelRatio
+    const material = new PointsMaterial({color: 0xffffff, size: 2, sizeAttenuation: false})
     return new Points(geometry, material)
 }

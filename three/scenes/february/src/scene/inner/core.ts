@@ -22,8 +22,7 @@ function makeAura(): Points {
     arcs()
 
     geometry.setFromPoints(vertices)
-    const material = new PointsMaterial({color: 0xf9f9f9, sizeAttenuation: false})
-    material.size = window.devicePixelRatio * 2
+    const material = new PointsMaterial({color: 0xf9f9f9, size: 4, sizeAttenuation: false})
     return new Points(geometry, material)
 }
 
